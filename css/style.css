@@ -82,6 +82,10 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
+    background: url('hartsoftware/images/code-img.jpg');
+    background-repeat: no-repeat;
+      background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-content {
