@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
         emailjs.sendForm('service_lw7hxxf', 'template_lo16p89', this)
             .then(function () {
-                alert('Message sent successfully!');
+                alert('Thank you for reaching out! I have received your message and will be in touch soon.');
                 document.getElementById('contact-form').reset();
             }, function (error) {
                 alert('Failed to send message. Try again later.');
