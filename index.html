@@ -37,15 +37,14 @@
             <div class="text-animate">
                 <h3>Software Engineer</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repudiandae natus a, temporibus porro illo ratione blanditiis repellat exercitationem vel voluptates magnam voluptate, incidunt ea rerum, commodi quisquam nulla quasi recusandae? Reiciendis sequi id quas culpa nisi repudiandae assumenda explicabo ratione soluta in molestiae quos ea, ipsa cumque officiis odio, tempore consequuntur accusamus temporibus deleniti vel. At cumque quos veritatis cum illum odit magnam, dolorum, minus qui, dignissimos doloremque quam excepturi alias.</p>
             <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#about" class="btn">About Me</a>
             </div>
         </div>
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bx-envelope'></i></a>
+            <a href="https://www.linkedin.com/in/calvin-hart-dev/"><i class='bx bxl-linkedin'></i></a>
+            <a href="mailto:calvinhart.engineer@gmail.com"><i class='bx bx-envelope'></i></a>
         </div>
     </section>
 
@@ -445,34 +444,29 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" name="name" placeholder="Full Name" required>
                     <span class="focus">
                     </span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                     <span class="focus">
                     </span>
                 </div>
             </div>
 
             <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Phone Number" required>
-                    <span class="focus">
-                    </span>
-                </div>
-                <div class="input-field">
+                <div style="width: 100% !important;" class="input-field">
                     <input type="text" placeholder="Email Subject" required>
                     <span class="focus">
                     </span>
                 </div>
             </div>
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
                 <span class="focus">
 
                 </span>
@@ -495,6 +489,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 
 </html>
