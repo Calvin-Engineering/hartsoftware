@@ -45,7 +45,12 @@ header{
 }
 
 header.sticky {
-    background: var(--bg-color);
+    background: var(--main-color);
+}
+
+header.sticky .navbar a:hover,
+header.sticky .navbar a.active {
+    color: var(--bg-color);
 }
 
 .logo {

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onscroll = () => {
         sections.forEach(sec => {
             let top = window.scrollY;
-            let offset = sec.offsetTop - 100;
+            let offset = sec.offsetTop - 10;
             let height = sec.offsetHeight;
             let id = sec.getAttribute('id');
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         let header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 100);
+        header.classList.toggle('sticky', window.scrollY > 10);
 
         menuIcon.classList.remove('bx-x');
         navbar.classList.remove('active');
