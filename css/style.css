@@ -82,6 +82,37 @@ section {
 .home {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 10%;
+    background: var(--bg-color);
+    flex-wrap: wrap; /* ADD THIS for better responsive behavior */
+    position: relative;
+}
+
+.home-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column; /* STACKS CHILDREN VERTICALLY */
+    gap: 2rem; /* SPACE BETWEEN TEXT AND BUTTONS */
+    z-index: 1;
+}
+
+.text-animate {
+    display: block;
+    position: relative;
+}
+
+.btn-box {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* make sure buttons don’t collide on small screens */
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
     padding: 0 9%;
     background: url('/hartsoftware/images/code-img.jpg');
     background-repeat: no-repeat;
@@ -104,10 +135,12 @@ section {
 }
 
 .home-content .text-animate {
-    display: contents;
+    display: block; /* or flex if needed */
     position: relative;
-    width: 32.8rem;
- }
+    width: 100%; /* Or a controlled max-width if preferred */
+    margin-top: 1rem;
+}
+
 
  .home-content .text-animate h3 {
    font-size: 3.2rem;
@@ -190,9 +223,9 @@ section {
 }
 
 .home-sci {
-    position: absolute;
+    position:absolute;
     width: 200px;
-    bottom: 20rem;
+    bottom: 10rem;
     display: flex;
     justify-content: space-between;
 }
