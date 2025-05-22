@@ -54,4 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath.split('/').pop()) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+
+
 })
